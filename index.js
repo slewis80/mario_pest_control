@@ -15,6 +15,9 @@ function totalCost(e){
 
     document.getElementById("totalCost").innerHTML = `Your total cost is ${result} coins.`;
 
+    form.goombas.value = " ";
+    form.bobombs.value = " ";
+    form.cheepcheeps.value = " ";
 }
 
 form.addEventListener("submit", totalCost);
