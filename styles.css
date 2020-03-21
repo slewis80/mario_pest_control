@@ -1,0 +1,31 @@
+header img {
+    margin: 15px auto 10px;
+    display: block;
+}
+header h1 {
+    text-align: center;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 40px;
+    color: darkred;
+    text-shadow: 3px 2px 5px black;
+}
+#coins {
+    margin: 5px;
+}
+
+footer {
+    text-align: center;
+}
+footer div {
+    padding: 3px;
+}
+#superstar {
+    height: 50px;
+    float: left;
+    margin: 20px;
+}
+#yoshi {
+    height: 50px;
+    float: right;
+    margin: 20px;
+}
