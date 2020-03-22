@@ -5,25 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mario's Pest Control</title>
     <link rel="stylesheet" href="styles.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
+        <img src=".\resources\images\mario company logo.png" height="250px" width="250px"/>
         <h1>Mario's Pest Control</h1>
     </header>
     <main>
-        <div>
+        <div class="positionOne">
             <p>Princess Peach has a huge infestation of Goombas, Bob-ombs, and Cheep-cheeps, and has commissioned Mario to take care of her pest problem. </p>
             <p>Mario did the job, but he is having trouble keep track of how many he has caught and has asked you to help keep track of his mission.</p>
         </div>
         <div>
             <h4>Each Monster's price:</h4>
-            <ul>
+            <ul class="price">
                 <li>        <img src="https://tse3.mm.bing.net/th?id=OIP.dHvDHqvj-LSn5sXmcMiNzwHaHa&pid=Api&P=0&w=300&h=300" width="20px" alt=""> Goombas: 5 Coins</li>
                 <li>        <img src="https://tse1.mm.bing.net/th?id=OIP.UWAvh3HhCh8r-c55tgYSygHaHa&pid=Api&P=0&w=300&h=300" width="25px" alt=""> Bob-ombs: 7 Coins</li>
                 <li>        <img src="https://tse1.mm.bing.net/th?id=OIP.REggQw2Tof1dB2CKhX22awHaG5&pid=Api&P=0&w=177&h=166" width="20px" alt=""> Cheep-cheeps: 11 Coins</li>
             </ul>
         </div>
-        <div>
+        <div class="positionTwo">
             <form id="monstersForm">
                 <h3>Monsters Caught:</h3>
                 <label>How many Goombas?</label>
@@ -38,11 +40,11 @@
         <h4 id="totalCost"><img src="https://github.com/slewis80/mario_pest_control/blob/sabrina's-branch/resources/images/coint%20stack.png?raw=true" width=" 20px"></h4>
     </main>
     <footer>
-        <div id="websiteUrl">MarioPestControl.com</div>
-        <div id="address">107 Fireball Ln, Mushroom Kingdom</div>
-        <div id="email">mario@mariopestcontrol.com</div>
-        <img id="superstar" src=".\resources\images\super star.png" width="30px"/>
-        <img id="yoshi" src=".\resources\images\yoshi tongue.png" width="60px"/>
+        <img id="superstar" src=".\resources\images\super star.png"/>
+        <p id="websiteUrl">Website: <a href= "index.html">MarioPestControl.com</a></p>        
+        <p id="address">Address: 107 Fireball Ln, Mushroom Kingdom</p>
+        <p id="email">Email us at: <a href= "mario@mariopestcontrol.com">mario@mariopestcontrol.com</a></p>
+        <img id="yoshi" src=".\resources\images\yoshi tongue.png"/>
     </footer>
     <script src="index.js"></script>
 </body>
