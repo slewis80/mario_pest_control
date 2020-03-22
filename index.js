@@ -1,25 +1,24 @@
-const form = document.form;
+const form = document.getElementById("monstersForm");
 
-form.addEventListener("submit", totalCost);
+
+function costOfMonster(num1, num2) {
+    return (num1 * num2);
+}
 
 function totalCost(e){
     e.preventDefault();
 
-    let goombas = form.goombas.value;
-    let bobombs = form.bobombs.value;
-    let cheepcheeps = form.cheepcheeps.value;
+    let numberOfGoombas = costOfMonster(form.goombas.value, 5);
+    let numberOfBobombs = costOfMonster(form.bobombs.value, 7);
+    let numberOfCheepcheeps = costOfMonster(form.cheepcheeps.value, 11);
 
-    const goombasCost = function countGoombas(goombas){
-        return (goombas * 5);
-    }
-    const bobombsCost = function countBobombs(bobombs){
-        return (bobombs * 7);
-    }
-    const cheepcheepsCost = function countCheepcheeps(cheepcheeps){
-        return (cheepcheeps * 11);
-    }
-    const result = goombasCost + bobombsCost + cheepcheepsCost;
+    let result = (numberOfGoombas + numberOfBobombs + numberOfCheepcheeps);
 
-    document.getElementById("totalCost").innerHTML = `Your total cost is ${result} coins.`
+    document.getElementById("totalCost").innerHTML += `Your total cost is ${result} coins.`;
 
+    form.goombas.value = " ";
+    form.bobombs.value = " ";
+    form.cheepcheeps.value = " ";
 }
+
+form.addEventListener("submit", totalCost);
