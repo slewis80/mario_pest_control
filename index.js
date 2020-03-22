@@ -1,6 +1,5 @@
 const form = document.getElementById("monstersForm");
 
-
 function costOfMonster(num1, num2) {
     return (num1 * num2);
 }
@@ -14,7 +13,7 @@ function totalCost(e){
 
     let result = (numberOfGoombas + numberOfBobombs + numberOfCheepcheeps);
 
-    document.getElementById("totalCost").innerHTML += `Your total cost is ${result} coins.`;
+    document.getElementById("totalCost").innerHTML = `Your total cost is ${result} coins.`;
 
     form.goombas.value = " ";
     form.bobombs.value = " ";
