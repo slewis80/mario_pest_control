@@ -1,3 +1,6 @@
+header{
+    width: auto;
+}
 header img {
     margin: 15px auto 10px;
     display: block;
@@ -9,12 +12,28 @@ header h1 {
     color: darkred;
     text-shadow: 3px 2px 5px black;
 }
+main{
+    justify-content: center;
+    text-align: center;
+    background-image: url(https://github.com/slewis80/mario_pest_control/blob/master/resources/images/princess%20peach%20castle.png?raw=true);
+    background-position: center;
+    font-size: 20px;
+    font-weight: bold;
+}
 #coins {
     margin: 5px;
 }
-
 footer {
     text-align: center;
+    justify-content: space-evenly;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+a:hover {
+    cursor: pointer;
+    color: aqua;
 }
 footer div {
     padding: 3px;
@@ -28,4 +47,24 @@ footer div {
     height: 50px;
     float: right;
     margin: 20px;
+}
+@media only screen and (min-width: 450px){
+    header{
+        font-size: 60px;
+        background-color: khaki;
+    }
+    body{
+        background-color: lightcoral;
+    }
+    main{
+        background-color: white;
+    }
+    footer {
+        display: flex; 
+        flex-direction: row;
+        text-align: center;
+        justify-content: space-evenly;
+        padding: 3px;
+        background-color: lightskyblue;
+    }
 }
