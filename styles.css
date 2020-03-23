@@ -26,6 +26,10 @@ main{
 }
 #coins {
     margin: 5px;
+    display: inline;
+}
+#totalCost {
+    display: inline;
 }
 footer {
     text-align: center;
