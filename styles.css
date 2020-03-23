@@ -17,8 +17,12 @@ main{
     text-align: center;
     background-image: url(https://github.com/slewis80/mario_pest_control/blob/master/resources/images/princess%20peach%20castle.png?raw=true);
     background-position: center;
+    background-repeat: no-repeat;
     font-size: 20px;
     font-weight: bold;
+}
+.price {
+    list-style: none;
 }
 #coins {
     margin: 5px;
@@ -33,9 +37,9 @@ a {
 }
 a:hover {
     cursor: pointer;
-    color: aqua;
+    color: darkred;
 }
-footer div {
+footer p {
     padding: 3px;
 }
 #superstar {
@@ -48,7 +52,7 @@ footer div {
     float: right;
     margin: 20px;
 }
-@media only screen and (min-width: 450px){
+@media only screen and (min-width: 550px){
     header{
         font-size: 60px;
         background-color: khaki;
